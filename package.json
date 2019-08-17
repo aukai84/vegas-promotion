@@ -1,0 +1,8 @@
+{
+  "name": "vegas-promotion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aukai84/vegas-promotion.git",
+  "author": "Aukai Tirrell <aukai.tirrell@gmail.com>",
+  "license": "MIT"
+}
