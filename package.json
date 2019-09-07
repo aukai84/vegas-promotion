@@ -1,8 +1,25 @@
 {
   "name": "vegas-promotion",
   "version": "1.0.0",
+  "description": "Promotion website to access Vegas latest clubs",
   "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
+  "engineStrict": true,
   "repository": "git@github.com:aukai84/vegas-promotion.git",
   "author": "Aukai Tirrell <aukai.tirrell@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^2.15.9",
+    "gatsby-plugin-styled-components": "^3.1.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "gatsby-plugin-eslint": "^2.0.5",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
+  }
 }
