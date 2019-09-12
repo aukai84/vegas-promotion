@@ -41,7 +41,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "husky": {
-    "pre-commit": "pretty-quick --staged"
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "repository": {
     "type": "git",
