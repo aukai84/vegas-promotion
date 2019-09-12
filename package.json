@@ -21,8 +21,11 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.3",
     "babel-plugin-styled-components": "^1.10.6",
     "babel-preset-gatsby": "^0.2.12",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.14.3",
     "gatsby-plugin-eslint": "^2.0.5",
     "husky": "^3.0.5",
     "prettier": "^1.18.2",
@@ -39,6 +42,11 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "repository": {
     "type": "git",

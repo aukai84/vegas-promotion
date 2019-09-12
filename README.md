@@ -14,6 +14,8 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## 🚀 Quick start
 
+### This site is deployed to Netlify [![Netlify Status](https://api.netlify.com/api/v1/badges/f06f2269-93dc-4252-b2d9-e120dc528f58/deploy-status)](https://app.netlify.com/sites/vegas-promotion/deploys)
+
 1.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the default starter.
