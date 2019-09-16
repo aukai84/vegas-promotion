@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>This is the feature branch</h1>
+      <h1>This is the feature branch PR was edited!!!!</h1>
       <h1>Hi people</h1>
       <h2>test</h2>
       <p>Welcome to your new Gatsby site.</p>
