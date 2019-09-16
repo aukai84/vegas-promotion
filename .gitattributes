@@ -8,3 +8,4 @@ src/media/*.psd filter=lfs diff=lfs merge=lfs -text
 src/media/*.jpg filter=lfs diff=lfs merge=lfs -text
 src/media/*.jpeg filter=lfs diff=lfs merge=lfs -text
 src/media/*.mov filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text

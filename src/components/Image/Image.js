@@ -1,4 +1,6 @@
+/* eslint-disable no-undef */
 import React from "react";
+import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
@@ -13,20 +15,32 @@ import Img from "gatsby-image";
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = () => {
+const Image = ({ src, alt }) => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+      allFile(filter: { sourceInstanceName: { eq: "media" } }) {
+        nodes {
+          id
+          name
+          relativePath
+          publicURL
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
     }
   `);
+  const image = data.allFile.nodes.find((n) => n.relativePath.includes(src));
+  console.log(image);
+  return <Img fluid={image.childImageSharp.fluid} alt={alt} />;
+};
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />;
+Image.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
 };
 
 export default Image;
