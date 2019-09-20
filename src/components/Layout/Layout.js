@@ -7,28 +7,28 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { useStaticQuery, graphql } from "gatsby";
+// import { useStaticQuery, graphql } from "gatsby";
 import { ThemeProvider } from "styled-components";
-import Header from "../header";
+import { Navigation } from "../Navigation";
 import { theme, GlobalStyles } from "../../styles";
 import "./index.css";
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `);
 
   return (
     <ThemeProvider theme={theme}>
       <div>
         <GlobalStyles />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Navigation />
         <div
           style={{
             margin: `0 auto`,
