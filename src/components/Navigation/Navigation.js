@@ -2,16 +2,32 @@ import React from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-const NavHeader = styled(Link)``;
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const NavHeader = styled(Link)`
+  font-weight: 600;
+`;
+
 const NavItem = styled(Link)``;
 
 const Navigation = () => (
-  <div>
-    <NavHeader to="/">XS Nightclub Promotion</NavHeader>
-    <NavItem to="/about">About</NavItem>
-    <NavItem to="/rsvp">Table RSVP</NavItem>
-    <NavItem to="/venues">Venues</NavItem>
-  </div>
+  <Wrapper>
+    <div>
+      <NavItem to="/venues">Venues</NavItem>
+      <NavItem to="/rsvp">Table RSVP</NavItem>
+    </div>
+    <div>
+      <NavHeader to="/">XS VIP</NavHeader>
+    </div>
+    <div>
+      <NavItem to="/about">About</NavItem>
+      <NavItem to="/contact">Contact Us</NavItem>
+    </div>
+  </Wrapper>
 );
 
 export default Navigation;
