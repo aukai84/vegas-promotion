@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 2.25rem 0;
 `;
 
 const NavHeader = styled(Link)`

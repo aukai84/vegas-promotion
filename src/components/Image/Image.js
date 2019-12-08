@@ -18,7 +18,7 @@ import Img from "gatsby-image";
 const Image = ({ src, alt }) => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { sourceInstanceName: { eq: "media" } }) {
+      allFile(filter: { sourceInstanceName: { eq: "assets" } }) {
         nodes {
           id
           name
