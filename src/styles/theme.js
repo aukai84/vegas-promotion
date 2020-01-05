@@ -31,10 +31,8 @@ export const sizes = {
   small: 568,
 };
 
-const theme = {
+export const theme = {
   colors,
   fonts,
   sizes,
 };
-
-export default theme;
