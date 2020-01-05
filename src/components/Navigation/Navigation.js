@@ -1,34 +1,21 @@
 import React from "react";
 import { Link } from "gatsby";
-import styled from "styled-components";
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 2.25rem 0;
-`;
-
-const NavHeader = styled(Link)`
-  font-weight: 600;
-`;
-
-const NavItem = styled(Link)``;
+import { Flex, Heading } from "@chakra-ui/core";
 
 const Navigation = () => (
-  <Wrapper>
+  <Flex justify="space-between" p={6}>
     <div>
-      <NavItem to="/venues">Venues</NavItem>
-      <NavItem to="/rsvp">Table RSVP</NavItem>
+      <Link to="/venues">Venues</Link>
+      <Link to="/rsvp">Table RSVP</Link>
     </div>
+    <Link to="/">
+      <Heading to="/">XS VIP</Heading>
+    </Link>
     <div>
-      <NavHeader to="/">XS VIP</NavHeader>
+      <Link to="/about">About</Link>
+      <Link to="/contact">Contact Us</Link>
     </div>
-    <div>
-      <NavItem to="/about">About</NavItem>
-      <NavItem to="/contact">Contact Us</NavItem>
-    </div>
-  </Wrapper>
+  </Flex>
 );
 
 export default Navigation;
