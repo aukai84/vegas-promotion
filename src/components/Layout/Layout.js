@@ -8,9 +8,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 // import { useStaticQuery, graphql } from "gatsby";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, CSSReset, Box } from "@chakra-ui/core";
 import { Navigation } from "../Navigation";
-import { theme, GlobalStyles } from "../../styles";
 import "./index.css";
 
 const Layout = ({ children }) => {
@@ -25,9 +24,9 @@ const Layout = ({ children }) => {
   // `);
 
   return (
-    <ThemeProvider theme={theme}>
-      <div>
-        <GlobalStyles />
+    <ThemeProvider>
+      <CSSReset />
+      <Box>
         <Navigation />
         <div
           style={{
@@ -39,7 +38,7 @@ const Layout = ({ children }) => {
         >
           {children}
         </div>
-      </div>
+      </Box>
     </ThemeProvider>
   );
 };
