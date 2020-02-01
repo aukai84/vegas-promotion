@@ -15,7 +15,7 @@ import Img from "gatsby-image";
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Image = ({ src, alt }) => {
+const Image = ({ src, alt, ...rest }) => {
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { sourceInstanceName: { eq: "assets" } }) {
@@ -34,8 +34,7 @@ const Image = ({ src, alt }) => {
     }
   `);
   const image = data.allFile.nodes.find((n) => n.relativePath.includes(src));
-  console.log(image);
-  return <Img fluid={image.childImageSharp.fluid} alt={alt} />;
+  return <Img fluid={image.childImageSharp.fluid} alt={alt} {...rest} />;
 };
 
 Image.propTypes = {
