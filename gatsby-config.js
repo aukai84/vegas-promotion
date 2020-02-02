@@ -15,7 +15,6 @@ module.exports = {
     },
     `gatsby-plugin-eslint`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-chakra-ui`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
