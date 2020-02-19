@@ -19,12 +19,12 @@ const Home = () => {
   const settings = {
     infinite: true,
     fade: true,
-    speed: 1000,
+    speed: 2000,
     autoplay: true,
-    autoplaySpeed: 2200,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    cssEase: "ease-in-out",
+    cssEase: "linear",
     arrows: false,
   };
   return (
@@ -35,8 +35,8 @@ const Home = () => {
         <CarouselImage src="/resources/diplo_1.jpg" alt="Diplo" />
         <CarouselImage src="/resources/drake-cover.jpg" alt="Drake" />
         <CarouselImage
-          src="/resources/chainsmokers_2.jpg"
-          alt="Chainsmokers_2"
+          src="/resources/chainsmokers_3.jpg"
+          alt="Chainsmokers_3"
         />
       </Slider>
       <Link to="/about">Go to page About</Link>
