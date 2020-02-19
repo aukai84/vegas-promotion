@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "typeface-montserrat";
+import "typeface-open-sans";
+import "./index.css";
 // import { useStaticQuery, graphql } from "gatsby";
 import { ThemeProvider, CSSReset, Box, theme } from "@chakra-ui/core";
 import { Navigation } from "../Navigation";
-import "./index.css";
-
 const customTheme = {
   ...theme,
   fonts: {
