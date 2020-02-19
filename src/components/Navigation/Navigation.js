@@ -6,7 +6,7 @@ import { Flex, Heading, Link } from "@chakra-ui/core";
 const NavLink = ({ to, ...rest }) => (
   <Link
     color="white"
-    fontFamily="heading"
+    fontFamily="navigation"
     fontSize="lg"
     fontWeight="medium"
     textDecor="none"
