@@ -5551,10 +5551,10 @@ gatsby-plugin-chakra-ui@^0.1.2:
   resolved "https://npm.webmocha.com/gatsby-plugin-chakra-ui/-/gatsby-plugin-chakra-ui-0.1.2.tgz#2d5029c4ed478a372951aa2467c8beedec5a7369"
   integrity sha512-FfEc1GXi2fncVTYpp9Y/3GUCe12q3pHJMpcWxYJt1D1rza3lLtnyhzm3mxW+X9Cu/3Rv17FnuSmquc4oK/K/5Q==
 
-gatsby-plugin-eslint@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-2.0.5.tgz#be02f5aff9b7f4a37927f3f917e82ad9f3d67f09"
-  integrity sha512-7dgcNtFOGgPLseDA55DDjqqnSW+2Pe91erL6nFjLFs/vlFlT9+GbR/4zkQH9WjWOHSfCtgrUzi59cxM1rBm4kw==
+gatsby-plugin-eslint@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-2.0.8.tgz#1ff7f546a427d274dc2de3932ba29822aae330c3"
+  integrity sha512-vAMy37povmQJNg6ZxY78fkWR3pKwG8MNMhO3u+4vXj2MYT5avhFvHPJTAb126ZCuygf30gAWlpwbV50zP894Jw==
 
 gatsby-plugin-manifest@^2.2.14:
   version "2.2.14"
