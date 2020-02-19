@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 // import { useStaticQuery, graphql } from "gatsby";
 import { ThemeProvider, CSSReset, Box, theme } from "@chakra-ui/core";
 import { Navigation } from "../Navigation";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./index.css";
 
 const customTheme = {
